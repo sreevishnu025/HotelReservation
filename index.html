@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> HRS | Booking</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="icon" type="icon/png" href="images/logo.webp">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href="includes/css/styles.css" rel="stylesheet">
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <script src="includes/js/script.js"></script>
+       
+	</head>
+	<body id="main">
+		<div class="container" >
+
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" ><img src="images/logo.webp" alt="your logo" id="logo"></a>
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+								
+						</ul>
+						
+						<ul class="nav navbar-nav pull-right">
+							<li  >
+								<a href="#myModal" role="button" class="btn " data-toggle="modal" id="user"><span class="glyphicon glyphicon-user "></span> Login</a>
+								
+							</li>
+						</ul>
+                        
+					</div>
+				  
+				</div>
+			</div><!-- end of nav bar -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-xl" >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+
+                            <h4 class="modal-title"> Login</h4>
+
+                        </div>
+                        <!-- Login modal-->
+                        <form class="form-horizontal" id="login">
+                        <div class="modal-body">
+                            <br><br>
+                            
+                                
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" for="inputEmail1">Email </label>
+                                    <div class="col-lg-8">
+                                        <input class="form-control" type="email"  placeholder="Email" id="inputEmail1" required>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" for="password1">Password </label>
+                                    <div class="col-lg-8">
+                                        <input class="form-control" type="password"  placeholder="Password" id="password1" required>
+                                    </div>
+
+                                </div>   
+                            <br>
+                           
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" data-dismiss="modal"> Close</button>
+                            <button class="btn btn-success" type="submit" onclick="login()" >Login</button>
+                            <a href="#myModal1" role="button" class="btn btn-primary" data-toggle="modal">Sign up</a>
+
+                        </div>
+					</form>
+                    </div>
+                </div>
+            </div> <!--End of Login modal-->
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-lg" id="reg_modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+
+                            <h4 class="modal-title"> Sign up</h4>
+
+                        </div>
+                           <br>
+                            <form class="form-horizontal" id="register" action="">
+                           
+                           <div class="modal-body">  
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label" for="inputName">Name </label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" placeholder="user name" id="inputName" required>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group" >
+                                    <label class="col-lg-2 control-label" for="inputEmail">Email </label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="email"  placeholder="Email" id="inputEmail" required>
+                                    </div>
+
+                                </div>
+								<div class="form-group">
+                                    <label class="col-lg-2 control-label" for="Phonenum">Phone number </label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="number" placeholder="Phone number" id="Phonenum" required>
+
+                                    </div>
+
+                                </div>
+								<div class="form-group">
+                                    <label class="col-lg-2 control-label" for="city">City</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" placeholder="City" id="city" required>
+
+                                    </div>
+
+                                </div>
+								<div class="form-group">
+                                    <label class="col-lg-2 control-label" for="country">Country</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" placeholder="Country" id="country" required>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label" for="password">Password </label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="password"  placeholder="Password" id="password" required>
+                                        
+                                        
+                                    </div>
+                                    
+                                </div> 
+                            
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal"> Close</button>
+                                <button class="btn btn-success" type="submit" onclick="register()"  >Register</button>
+
+                            </div>
+					    </form>
+                    </div>
+                </div>
+            </div> <!--End of register modal-->
+
+            <div class="carousel slide" id="myCarousel">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+				<div class="carousel-inner">
+					
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+                            <h4>Super luxurious room</h4>
+						<p>Here is the room with 2 cushion chairs, king size bed and a table to work on.</p>
+					</div>
+					</div>
+
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+						<h4>Super luxurious room</h4>
+						<p>The room have nice ventilation with side lamps and Tv for entertainment.</p>
+					</div>
+					</div>
+					
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+                        <h4>Super luxurious room</h4>
+						<p>This very luxurious room has a bathroom equiped with bathtub, change room and mirror.</p>
+					</div>
+					</div>
+				</div>
+				<!--Carousel inner-->
+
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span> </a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span> </a>
+
+			</div><!--end carousel-->
+            <div class="well">
+                <div class="page-header">
+                    <h1>Super luxurious room <small>Single bed</small></h1>
+
+                </div>
+                <p class="lead"> Here is the room with 2 cushion chairs, king size bed and a table to work on.The room have nice ventilation with side lamps and Tv for entertainment.This very luxurious room has a bathroom equiped with bathtub, change room and mirror.</p>
+                <p class="price"><strong>Price: </strong>Rs.16,000 <small>Excluding taxes..</small></p>
+                <a href="payment.html" class="btn btn-large btn-primary" id="book1" onclick="book('16000')"> Book the room</a>
+            </div>
+
+            <div class="carousel slide" id="myCarousel1">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel1"></li>
+					<li data-slide-to="1" data-target="#myCarousel1"></li>
+					<li data-slide-to="2" data-target="#myCarousel1"></li>
+				</ol>
+				<div class="carousel-inner">
+					
+					<div class="item active" id="slide11">
+						<div class="carousel-caption">
+						<h4>Suite room</h4>
+						<p>Room consists of a king size bed with air conditioner and mini kitchen. </p>
+                        
+					</div>
+					</div>
+
+					<div class="item" id="slide12">
+						<div class="carousel-caption">
+							<h4>Suite room</h4>
+						<p>This room will have a sofa set, TV and a view of outside city.</p>
+					</div>
+					</div>
+					
+					<div class="item" id="slide13">
+						<div class="carousel-caption">
+							<h4>Suite room</h4>
+						<p>The bathroom is one of the luxurious with mirror bath and other features.</p>
+					</div>
+					</div>
+				</div>
+				<!--Carousel inner-->
+
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel1"><span class="icon-prev"></span> </a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel1"><span class="icon-next"></span> </a>
+
+			</div><!--end carousel2-->
+			<div class="well">
+                <div class="page-header">
+                    <h1>Suite room <small>Single bed</small></h1>
+
+                </div>
+                <p class="lead"> Room consists of a king size bed with air conditioner and mini kitchen. This room will have a sofa set, TV and a view of outside city. The bathroom is one of the luxurious with 24hrs hot water, mirrors, sink and other features.</p>
+                <p class="price"><strong>Price: </strong>Rs.22,000 <small>Excluding taxes..</small></p>
+                <a href="payment.html" class="btn btn-large btn-primary" id="book1" onclick="book('22000')"> Book the room</a>
+            </div>
+	
+	</body>
+</html>
+

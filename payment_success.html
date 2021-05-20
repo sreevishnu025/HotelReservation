@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="icon/png" href="images/logo.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HRS | Payment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-12">
+            <h4>
+            Payment of Rs.<script>
+                var price1,tax,total;
+                price1 = localStorage.getItem("p1");
+                tax = price1*0.08;
+                total = Number(price1) + Number(tax);
+                document.write(total);
+
+            </script> is Successfull!!</h4>
+            <p>To go to home please click the link below</p>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> HRS | Payment</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="icon" type="icon/png" href="images/logo.webp">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href="includes/css/styles.css" rel="stylesheet">
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+	    <script src="includes/js/script.js"></script>
+       
+	</head>
+    <body id="payment" >
+        
+        <div class="container" >
+            <br>
+           
+            <form class="form-horizontal" id="pay_form" action="payment_success.html" >
+                <h4 id="headp">Payment Portal</h4>           
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" for="inputName">Name </label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="text" placeholder="user name" id="inputName" required>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group" >
+                    <label class="col-lg-3 control-label" for="inputEmail">Email </label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="email"  placeholder="Email" id="inputEmail" required>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" for="Phonenum">Phone number </label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="number" placeholder="Phone number" id="Phonenum" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" for="city">City</label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="text" placeholder="City" id="city" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" for="country">Country</label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="text" placeholder="Country" id="country" required>
+
+                    </div>
+                    
+                </div>
+                <hr class="line">
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" for="cnum">card number </label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="text" placeholder="card number" id="cnum" required>
+
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" for="exp">Exp date </label>
+                    <div class="col-lg-3">
+                        <input class="form-control" type="number" placeholder="MM/YY" id="exp" required>
+    
+                    </div>
+                    <label class="col-lg-1 control-label" for="cvv">CVV </label>
+                        <div class="col-lg-3">
+                            <input class="form-control" type="number" placeholder="CVV" id="cvv" required>
+        
+                        </div>
+    
+                </div>
+                
+                 
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" for="noc">Name on the card </label>
+                    <div class="col-lg-8">
+                        <input class="form-control" type="text" placeholder="Name on the card" id="noc" required>
+    
+                    </div>
+                     
+                </div>
+                                 
+                <div class="row">
+                    <div class="col-lg-12">
+                    <table id="price_tab" cellpadding ="10px" cellspacing="5px">
+                        <h4 id="headp">Bill</h4>
+                       <script>
+                           var price1,tax,total;
+                           price1 = localStorage.getItem("p1");
+                           tax = price1*0.08;
+                           total = Number(price1) + Number(tax);
+                           document.writeln("<tr><td><strong>Price of the room:</strong></td><td> Rs." +price1+ " </td></tr>");
+                           document.writeln("<tr><td><strong>tax:</strong> </td><td> Rs." +tax+ " </td></tr>");
+                           document.writeln("<tr><td><strong>Total price:</strong> </td><td> Rs."+total+ " </td></tr>");
+        
+                       </script>
+                    </table>
+                   
+                    </div>
+                </div>
+                <div class="form-group">
+                    <center>
+                        <button type="submit" class="btn btn-large btn-success" id="pay_btn"> Pay Rs.<script>document.write(total);</script> </button>
+                    </center>
+                   
+                </div>
+            </form>
+        </div>
+       
+    </body>
+
+
+</html>

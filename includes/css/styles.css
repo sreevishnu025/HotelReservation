@@ -1,0 +1,254 @@
+
+#logo{
+   height: 25px;
+   width: auto;
+}
+#pay_form{
+   background-color: rgba(238, 238, 238, 0.884);
+   border: 2px solid rgb(194, 194, 194);
+   
+}
+#headp{
+   text-align: center;
+   font: 26px bold;
+   padding: 10px;
+   font-weight: 600;
+}
+#main{
+   background-color:#333 ;
+}
+.navbar{
+   background-color: #222;
+  
+}
+.navbar-brand{
+   color: #eee;
+   font-weight: 600;
+   text-shadow: 0.5px 0.5px 1px;
+}
+.navbar-brand:hover{
+   color: rgb(192, 192, 192);
+   
+}
+.nav li a{
+   color: #eee;
+}
+.nav li a:hover{
+   color: rgb(211, 211, 211);
+}
+
+#price_tab{
+   color: rgb(0, 0, 0);
+   font: 18px bold ;
+   text-align: center;
+   margin: 10px;
+   margin-left: auto;
+   margin-right: auto;
+}
+#pay_btn{
+   padding: 15px 25px 15px 25px;
+}
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+   #features {
+      text-align: center;
+   }
+   #features img{
+      margin-bottom: 20px;
+   }
+   #inputMessage {
+      margin-bottom: 15px;
+   }
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+   .well .page-header {
+      margin-top: 0;
+   }
+   
+   .well .page-header h1 {
+      margin-top: 0;
+   }
+   .alert{
+      margin-top: 20px;
+      display: none;
+   }
+   .well{
+      color: #eee;
+      background-color: #222;
+      border-color: #111;
+   }
+   .well p{
+      text-indent: 3%;
+   }
+   .price{
+      font-size: 18px ;
+   }
+   .price {
+     color: rgba(72, 255, 0, 0.705);
+   }
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .navbar-brand{
+      padding: 13px 15px;
+   }
+
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel {
+   margin-top: 60px;
+}
+#myCarousel1{
+   margin-top: 30px;
+   margin-bottom: 20px;
+
+}
+.carousel-caption{
+   background-color: rgba(31, 31, 31, 0.267);
+   font-size: 24px;
+}
+.carousel-caption h4{
+   font-size: 32px;
+}
+#myCarousel .item,#myCarousel1 .item{
+   
+   height: 400px;
+}
+#slide1 {
+   background: url('../../images/room1_med.jpg') top center no-repeat #333;
+}
+#slide2 {
+   background: url('../../images/room1a_med.jpg') top center no-repeat #333;
+}
+#slide3 {
+   background: url('../../images/room1b_med.jpg') top center no-repeat #333;
+}
+#slide11 {
+   background: url('../../images/room2_med.jpg') top center no-repeat #333;
+}
+#slide12 {
+   background: url('../../images/room2a_med.jpg') top center no-repeat #333;
+}
+#slide13 {
+   background: url('../../images/room2b_med.jpg') top center no-repeat #333;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+   .well {
+      margin: 20px 0px ;
+      
+   }
+
+   #tab2 img{
+      margin: 0px 20px 10px 0px;
+   }
+   .tabbable img.thumbnail {
+      margin: 0px 20px 10px 0px;
+   }
+   .thumbnails {
+      margin: 20px 0 ;
+   }
+   .thumbnail {
+      position: relative;
+   }
+   .thumbnail .price{
+      position: absolute;
+      font-size: 22px;
+      top: -10px;
+      right: -10px;
+      padding: 10px;
+   }
+   .thumbnail .price sup {
+      font-weight: normal;
+      font-size: 12px;
+   }
+   .thumbnail span.glyphicon {
+      padding: 5px;
+   }
+   .thumbnail h3{
+      font-size: 16px;
+   	margin: 0 0 10px;
+	   line-height: 20px;
+   }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+   
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+   #myCarousel .item,#myCarousel1 .item { 
+      height: 310px; 
+   }
+	#slide1 {
+      background: url('../../images/room1_small.jpg') top center no-repeat #333;
+   }
+   #slide2 {
+      background: url('../../images/room1a_small.jpg') top center no-repeat #333;
+   }
+   #slide3 {
+      background: url('../../images/room1b_small.jpg') top center no-repeat #333;
+   }
+   #slide11 {
+      background: url('../../images/room2_small.jpg') top center no-repeat #333;
+   }
+   #slide12 {
+      background: url('../../images/room2a_small.jpg') top center no-repeat #333;
+   }
+   #slide13 {
+      background: url('../../images/room2b_small.jpg') top center no-repeat #333;
+   }
+   .carousel-caption{
+      font-size: 16px;
+   }
+   .carousel-caption h4{
+      font-size: 22px;
+   }
+   .thumbnail .price{
+      font-size: 14px;
+     
+   }
+   .thumbnail .price sup {
+      font-size: 10px;
+   }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   #myCarousel .item, #myCarousel1 .item { 
+      height: 500px; 
+   }
+	#slide1 {
+      background: url('../../images/room1_large.jpg') top center no-repeat #333;
+   }
+   #slide2 {
+      background: url('../../images/room1a_large.jpg') top center no-repeat #333;
+   }
+   #slide3 {
+      background: url('../../images/room1b_large.jpg') top center no-repeat #333;
+   }
+   #slide11 {
+      background: url('../../images/room2_large.jpg') top center no-repeat #333;
+   }
+   #slide12 {
+      background: url('../../images/room2a_large.jpg') top center no-repeat #333;
+   }
+   #slide13 {
+      background: url('../../images/room2b_large.jpg') top center no-repeat #333;
+   }
+}
